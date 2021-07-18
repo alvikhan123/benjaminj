@@ -1,0 +1,575 @@
+
+a {
+
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Fjord One', serif;
+
+}
+
+
+
+.header {
+
+	background-color: #414a4c;
+	color: white;
+	box-sizing: border-box;
+	border-bottom: grey 0.2px solid;
+}
+
+.contacts {
+
+	margin-left: 20px;
+}
+
+.contacts i {
+
+	margin-left: 5px;
+}
+
+
+nav {
+
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.Navbar {
+
+	background-color: #414a4c;
+	display: flex;
+	flex: 1;
+	padding: 30px;
+}
+
+nav ul {
+
+	flex: 1;
+	margin: auto;
+	text-align: right;
+}
+
+.links a {
+
+	margin-right: 50px;
+	padding-bottom: 2px;
+	position: relative;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	font: inherit;
+	font-weight: 600;
+	text-transform: uppercase;
+
+
+}
+
+.links a:after {
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-top: 4px;
+  background-color: #0087ca;
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+
+}
+
+
+.links a:hover {
+
+	text-decoration: none;
+  color: #4AA2B4;
+
+}
+
+.links a:hover:after {
+
+	transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+
+@media screen and (max-width:1200px) {
+
+	.logo {
+
+		align-items: center;
+	}
+
+	nav ul {
+
+		align-items: center;
+	}
+
+	.links {
+
+		display: none;
+	}
+}
+
+
+
+.banner {
+
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-image: url(speaker1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+	opacity: 95%;
+}
+
+.banner-text {
+
+	text-align: center;
+	animation-name: drop2;
+	animation-duration: 1.5s;
+	font-family: 'raleway';
+	font-size: 1.5em;
+}
+
+@keyframes drop2 {
+
+	0% {
+
+		opacity: 0;
+		transform: translateY(80px);
+	}
+
+	100% {
+
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+}
+
+
+
+.MySeminars {
+
+	display: flex;
+	flex-direction: row;
+	padding: 50px;
+	background-color: ;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.FirstImg {
+
+	float: left;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.Text {
+
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+	margin: auto;
+	word-spacing: 10px;
+	font-size: 1.1em;
+	align-items: center;
+	margin-left: 10px;
+	color: whitesmoke;
+
+}
+
+.Text h2 {
+
+	font-size: 1.7em;
+	padding-bottom: 20px;
+	align-items: center;
+}
+
+section .Text1, .Text2, .Text3 {
+
+	text-indent: 20px;
+	font-size: 1em;
+
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+	.banner {
+
+		justify-content: left;
+	}
+
+	.banner-text {
+
+		font-size: 30px;
+	}
+
+	.MySeminars {
+
+		flex-direction: column;
+	}
+
+	.FirstImg {
+
+		background-position: center;
+}
+
+	.Text h2, .Text {
+
+		margin-top: 10px;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.Me {
+
+	align-items: right;
+	margin-left: 60px;
+	word-spacing: 10px;
+	font-size: 1.5em;
+	font-family: "helvetica" , sans-serif;
+	text-align: center;
+}
+
+
+
+
+.about {
+
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+}
+
+.about img {
+
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.content {
+
+	flex: 1;
+	position: absolute;
+	color: white;
+	padding: 40px;
+	text-align: left;
+	float: left;	
+	font-size: 30px;
+
+}
+
+.fake {
+
+	float: right;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.about {
+
+		flex-direction: column;
+		width: auto;
+	}
+
+	.content h1 {
+
+		font-size: 25px;
+		text-align: center;
+	}
+
+
+	.content {
+
+		position: relative;
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-size: 15px;
+
+
+	}
+
+}
+
+
+
+.featured {
+
+	background-color: #1D6E96;
+	padding: 30px;
+	color: whitesmoke;
+}
+
+.featured text {
+
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.feature-img {
+
+	margin-top: 50px;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.bookings {
+
+	padding: 50px;
+  background-color: darkgray;
+}
+
+.squares {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+	.squares {
+
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.squares a {
+
+	color: white;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Fjord One', serif;
+}
+
+.squares a:hover {
+
+	list-style-type: none;
+	text-decoration: none;
+
+
+}
+
+.square1, .square2, .square3 , .square4 , .square5, .square6 {
+
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 350px;
+	width: 100%;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+
+.square1 {
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(book1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+
+}
+
+.square1:hover {
+
+	opacity: 80%; 
+	transition: 1s;
+
+}
+
+
+.square2 {
+
+	background-image: url(zoom.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+}
+
+.square2:hover {
+
+	opacity: 80%;
+	transition: 1s;
+
+
+}
+
+.square3 {
+
+	background-image: url(working.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+}
+
+.square3:hover {
+
+	opacity: 80%;
+	transition: 1s; 
+
+}
+
+.square4 {
+
+	background-image: url(real-estate.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+
+}
+
+.square4:hover {
+
+	opacity: 80%; 
+	transition: 1s;
+
+}
+
+.square5 {
+
+	background-image: url(events.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+
+}
+
+.square5:hover {
+
+	opacity: 80%; 
+	transition: 1s;
+
+}
+
+.square6 {
+
+	background-image: url(podcast.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+
+}
+
+.square6:hover {
+
+	opacity: 80%;
+	transition: 1s; 
+
+}
+
+
+
+
+.footer-container {
+
+	background-color: #414a4c;
+	padding-top: 50px;
+}
+
+.footer {
+
+	width: 80%;
+	height: 35vh;
+	background-color: #414a4c;
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.footer-heading {
+
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.footer-heading h2 {
+
+	margin-bottom: 2rem;
+	flex-direction: row;
+}
+
+.footer-heading a {
+
+	color: white;
+	text-decoration: none;
+}
+
+.footer-heading a:hover {
+
+	color: grey;
+	transition: 0.3s ease-out;
+}
+
+.social-menu {
+
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.social-menu a {
+
+	font-size: 23px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.social-menu a:hover {
+
+	background-color: gray;
+	color: white;
+}
